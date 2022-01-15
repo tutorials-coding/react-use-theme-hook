@@ -2,11 +2,10 @@ import { useLayoutEffect, useState } from 'react'
 
 const isDarkTheme = window?.matchMedia('(prefers-color-scheme: dark)').matches
 const defaultTheme = isDarkTheme ? 'dark' : 'light'
-console.log('defaultTheme', defaultTheme)
 
 export const useTheme = () => {
   const [theme, setTheme] = useState(
-    localStorage.getItem('app-theme') || 'light'
+    localStorage.getItem('app-theme') || defaultTheme
   )
 
   useLayoutEffect(() => {
