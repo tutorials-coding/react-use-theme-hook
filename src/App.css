@@ -1,7 +1,9 @@
 .app__container {
+  background-color: var(--background-color);
 }
 
 .app__logo {
+  color: var(--icon-color);
 }
 
 .app__button,
@@ -9,10 +11,17 @@
 .app__button:focus,
 .app__button:active,
 .app__button:not(:disabled):not(.disabled):active {
+  color: var(--button-text-color);
+  background-color: var(--button-background-color);
+  border-color: var(--button-border-color);
 }
 
 .app__input,
 .app__input:focus {
+  color: var(--input-text-color);
+  background-color: var(--input-background-color);
+  border-color: var(--input-border-color);
 }
 .app__input::placeholder {
+  color: var(--input-placeholder-text-color);
 }
