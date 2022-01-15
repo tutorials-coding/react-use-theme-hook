@@ -4,9 +4,13 @@ import Button from 'react-bootstrap/Button'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import Form from 'react-bootstrap/Form'
 import { FaCoffee } from 'react-icons/fa'
+import { useTheme } from './hooks/use-theme'
+
 import './App.css'
 
 export default function App() {
+  const { theme, setTheme } = useTheme()
+
   return (
     <div className="app__container w-100 h-100 d-flex flex-column">
       <div className="p-3 d-flex justify-content-end">
